@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "smx-unplayed",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "observability": { "enabled": true },
+  // public/ (styles.css, live.js) is served before the Worker runs; anything
+  // else, including "/", falls through to src/main.ts.
+  "assets": { "directory": "public" },
+  // Keep in sync with CHART_PREWARM / LEADERBOARD_CHECK in src/cron.ts.
+  "triggers": { "crons": ["*/30 * * * *", "*/15 * * * *"] },
+  "kv_namespaces": [
+    // chart/song cache and per-user score sets (see src/data.ts)
+    { "binding": "CACHE", "id": "8ce9a7aad0964f91875377401764660d" },
+  ],
+}

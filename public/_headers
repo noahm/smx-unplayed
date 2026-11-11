@@ -1,0 +1,4 @@
+/styles.css
+  Cache-Control: public, max-age=600
+/live.js
+  Cache-Control: public, max-age=600

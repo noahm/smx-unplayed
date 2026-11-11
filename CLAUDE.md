@@ -8,8 +8,8 @@ A Cloudflare Worker: a web app + JSON/CSV API that, given a StepManiaX username,
 lists the charts that player has never scored on (their "unplayed" songs), with
 a live view that crosses charts off in real time as they clear them.
 
-- Live endpoint: `https://unplayed.smx.tools/` (until the `smx.tools` zone is on
-  Cloudflare, `https://smx-unplayed.psoplayer.workers.dev/`)
+- Live endpoint: `https://unplayed.smx.tools/` (a Workers custom domain, see
+  `routes` in `wrangler.jsonc`; the `*.workers.dev` URL is off)
 - Runtime: Cloudflare Workers (`wrangler.jsonc`): KV for the caches, Cron
   Triggers for the scheduled jobs, `public/` served as static assets.
 - History: this was the `cathadan/smx-unplayed-songs` val on Val Town (Deno) until

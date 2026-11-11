@@ -4,6 +4,8 @@
   "main": "src/index.ts",
   "compatibility_date": "2026-11-01",
   "observability": { "enabled": true },
+  // Wrangler creates the DNS record and certificate for this on deploy.
+  "routes": [{ "pattern": "unplayed.smx.tools", "custom_domain": true }],
   // public/ (styles.css, live.js) is served before the Worker runs; anything
   // else, including "/", falls through to src/main.ts.
   "assets": { "directory": "public" },

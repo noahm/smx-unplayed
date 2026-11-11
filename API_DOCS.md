@@ -1,3 +1,19 @@
+> **Copied from upstream — not documentation for this project.**
+>
+> Everything below the line is copied and pasted, unedited, from the README of
+> [DesktopMan/smx-api-docs](https://github.com/DesktopMan/smx-api-docs)
+> ([raw](https://raw.githubusercontent.com/DesktopMan/smx-api-docs/refs/heads/main/README.md))
+> as it stood in June 2026. It's kept here as an offline reference for the
+> third-party `api.smx.573.no` API that this Worker consumes. It is DesktopMan's
+> writing: "this repo" and "my public API" mean that upstream repo and API, not
+> smx-unplayed.
+>
+> Upstream has changed since this copy was taken; for example, it now documents
+> `songs/export` and `players/export` endpoints that aren't below. Check the
+> upstream repo for the current version, and file API issues there.
+
+---
+
 # About
 
 This repo serves as the documentation and issue tracker for my public API for the StepManiaX arcade game.

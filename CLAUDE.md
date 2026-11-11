@@ -15,7 +15,7 @@ a live view that crosses charts off in real time as they clear them.
 - History: this was the `cathadan/smx-unplayed-songs` val on Val Town (Deno) until
   Val Town shut down. `smx-unplayed.val.run` redirects here.
 
-`API_DOCS.md` is a local cache of
+`API_DOCS.md` is a June 2026 copy-paste (now somewhat out of date) of
 <https://raw.githubusercontent.com/DesktopMan/smx-api-docs/refs/heads/main/README.md>.
 **Note:** it documents the third-party `api.smx.573.no` API (authored by
 DesktopMan), not this project. Its wording ("my public API", "this repo serves
